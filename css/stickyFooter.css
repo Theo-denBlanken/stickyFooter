@@ -1,0 +1,57 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   background-color: darkgrey;
+   font-family: sans-serif;
+}
+* {
+  margin: 0;
+}
+header {
+   background-color: cornflowerblue;
+}
+h1 {
+   font-size: 2rem;
+   margin: 0 auto;
+   padding: 1em;
+}
+p {
+   padding: 1em 2em;
+}
+
+main {
+   width: 90%;
+   margin: 0 auto;
+   background-color: aliceblue;
+   min-height: 100%;
+   margin-bottom: -4em;
+}
+main:after {
+   content: "";
+   display: block;
+}
+main p img {
+   width: 100%;
+   display: block;
+   transition: width 1s;
+   height: auto;
+   cursor: pointer;
+}
+
+main p input:checked ~ label img {
+   width: 15%;
+}
+
+footer {
+   background-color: orange;
+}
+footer, main:after {
+   height: 4em;
+}
+footer p {
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   box-sizing: border-box;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Een sticky footer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="sticky footer">
+    <meta name="author" content="Theo den Blanken">
+    <link rel="stylesheet" href="css/stickyFooter.css">
+</head>
+<body>
+
+<main>
+  <header><h1>Een sticky footer</h1></header>
+   <p>Een sticky footer staat onderaan de pagina. 
+   Als er te weinig inhoud is, 
+   dan staat deze onder aan het venster.</p>
+   <p>Met dank aan: <a href="https://css-tricks.com/snippets/css/sticky-footer/">CSS-tricks</a>.</p>
+   <p>
+    <input type="checkbox" id="tggl">
+     <label for="tggl">Schaal de afbeelding
+     <img src="http://recoverybytes.com/wp-content/uploads/2015/10/freedom.jpg" alt="vrijheid">
+     </label>
+   </p>
+   <p>De oplossing van deze sticky footer bestaat uit een element, die de rest van de pagina bevat.
+   Hier is dat main. <br>
+   Deze krijgt een minimale hoogte van 100%. 
+   Vergeet niet html en body ook deze hoogte te geven. <br>
+   Vervolgens geeft je dit element een negatieve marge aan de onderkant. Die marge is precies de hoogte die je de footer hebt gegeven. <br>
+   De footer is dan al 'sticky' maar zijn inhoud valt over de footer-inhoud. <br>
+   Daarom voeg je met main:after een lege inhoud toe en geef die OOK die hoogte mee (en een display block).
+   </p>
+</main>
+<footer>
+   <p>Dit is de sticky footer</p>
+</footer>
+</body>
+</html>
